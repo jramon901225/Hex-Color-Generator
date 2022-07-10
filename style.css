@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+html {
+  font-family: "Source Code Pro", monospace;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hex-colors {
+  text-align: center;
+}
+
+.hex-colors h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: changecolor 5s infinite alternate;
+}
+
+.hex-colors h2 {
+  display: inline;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.button {
+  display: block;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  margin: 1rem auto;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+@keyframes changecolor {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: steelblue;
+  }
+  40% {
+    color: yellow;
+  }
+  60% {
+    color: white;
+  }
+  80% {
+    color: yellowgreen;
+  }
+  100% {
+    color: orangered;
+  }
+}
+
+@media (max-width: 480px) {
+  .hex-colors h1 {
+    font-size: 1.5rem;
+  }
+
+  .hex-colors {
+    width: 100%;
+  }
+}
